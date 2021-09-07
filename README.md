@@ -7,6 +7,42 @@ Laravel v8.58.0 (PHP v7.4.21)
 </p>
 <p>
 # php artisan make:migration create_notes_table --create=notes
+   <hr>
+   <?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateNotesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('notes', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->text('description');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('notes');
+    }
+}
+ 
+   <hr>
 </p>
 <p>
 # composer require phpoffice/phpword
