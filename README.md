@@ -8,6 +8,7 @@ Laravel v8.58.0 (PHP v7.4.21)
 <p>
 # php artisan make:migration create_notes_table --create=notes
    <hr>
+   <pre>
    <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -41,7 +42,7 @@ class CreateNotesTable extends Migration
         Schema::dropIfExists('notes');
     }
 }
- 
+ </pre>
    <hr>
 </p>
 <p>
