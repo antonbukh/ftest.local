@@ -1,3 +1,13 @@
+Laravel v8.58.0 (PHP v7.4.21)
+
+# composer create-project --prefer-dist laravel/laravel ftest.local
+# php artisan migrate
+# php artisan make:migration create_notes_table --create=notes
+# composer require phpoffice/phpword
+# composer require barryvdh/laravel-dompdf
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
