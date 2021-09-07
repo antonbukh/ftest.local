@@ -1,3 +1,58 @@
+Laravel v8.58.0 (PHP v7.4.21)
+<p>
+# composer create-project --prefer-dist laravel/laravel ftest.local
+</p>
+<p>
+# php artisan migrate
+</p>
+<p>
+# php artisan make:migration create_notes_table --create=notes
+   <hr>
+   <pre>
+   <?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateNotesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('notes', function (Blueprint $table) {
+            $table->id();
+            $table->string('title');
+            $table->text('description');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('notes');
+    }
+}
+ </pre>
+   <hr>
+</p>
+<p>
+# composer require phpoffice/phpword
+</p>
+<p>
+# composer require barryvdh/laravel-dompdf
+</p>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
